@@ -1,0 +1,121 @@
+@import 'bootstrap/bootstrap';
+@import '../lib/nanoscroller/bin/css/nanoscroller';
+
+@start-menu-width:600px;
+@start-menu-height: 500px;
+
+@start-menu-left-width: 200px;
+
+@start-menu-right-width: @start-menu-width - @start-menu-left-width;
+
+@start-menu-padding:5;
+@start-menu-margin:5;
+
+@font-size: 12px;
+
+#start-menu {
+    width: @start-menu-width;
+    height:@start-menu-height;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    font-size: @font-size;
+}
+
+#start-menu-left-panel{
+    width: @start-menu-left-width;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    float:left;
+    background-color: #006000;
+    border: 0px solid white;
+    border-right-width: 10px;
+    position:relative;
+}
+
+#start-menu-left-panel > .list-group-item {
+    background-color: #006000;
+    color:white;
+    margin:3px;
+    margin-right:0px;
+    border-radius:5px 0 0 5px;
+    border:none;
+}
+
+#start-menu-left-panel > .list-group-item.active {
+    background-color: #007F00;
+}
+
+#start-menu-left-panel > .list-group-item.active:hover {
+    background-color: #007F00;
+}
+
+
+#start-menu-left-panel > .list-group-item:after {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 8px solid transparent;
+}
+
+#start-menu-left-panel > .list-group-item.active:after {
+    right: -16px;
+    border-left-color:#007F00;
+}
+
+
+#start-menu-left-panel > a.list-group-item:hover {
+    color:white;
+    border:none;
+    background:-webkit-linear-gradient(bottom,rgba(255,255,255,0.3) 0%,rgba(0,0,0,0.1) 50%,rgba(255,255,255,0.1) 51%,rgba(255,255,255,0.3) 100%);
+}
+
+#start-menu-left-panel > #search-area {
+    background-color: #7faf7f;
+    padding: 15px 5px 10px 5px;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+
+#start-menu-left-panel > #search-area:after {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 8px solid transparent;
+}
+
+#start-menu-left-panel > #search-area.active:after {
+    border-left-color: #7faf7f;
+    right:-16px;
+}
+
+#start-menu-left-panel > #search-area input {
+    font:italic 12px Calibri,Arial,Sans-Serif;
+    margin-left:5px;
+}
+
+
+#start-menu-right-panel{
+    width: @start-menu-right-width;
+    height: 100%;
+    display: inline;
+    float: left;
+}
+
+#start-menu-right-panel-content {
+    padding-right:10px;
+}
+
+.nano .pane {
+    background: white;
+}
+
+#start-menu-right-panel.nano > .pane > .slider {
+    background: #aaa;
+}

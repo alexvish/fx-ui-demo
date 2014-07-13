@@ -6,7 +6,10 @@ define([
     'require',
     'angular',
     'angular-ui-router',
-    'app'
+    'ng-grid',
+    'app',
+    '$',
+    'nanoscroller'
 ], function (require, ng) {
     'use strict';
 
@@ -17,5 +20,6 @@ define([
 
     require(['domReady!'], function (document) {
         ng.bootstrap(document, ['app']);
+        $('.nano').nanoScroller();
     });
 });

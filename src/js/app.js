@@ -6,25 +6,28 @@ define("app", [
     'angular',
     'angular-ui-router',
     'angular-bootstrap',
-    'text!',
     './controllers/index',
-    './directives/index',
-    './filters/index',
     './services/index',
-    './views/index',
-    './states/index',
     './models/index'
 ], function (ng) {
     'use strict';
-
+    return ng.module('app',[
+            'app.models',
+            'app.controllers',
+            'app.services',
+            'ui.bootstrap',
+            'ui.bootstrap.tpls',
+            'ui.router'
+        ]);
+/*
     return ng.module('app', [
-        'app.services',
+        //'app.services',
         'app.controllers',
-        'app.filters',
-        'app.directives',
-        'app.views',
-        'app.states',
-        'app.models',
+        //'app.filters',
+        //'app.directives',
+        //'app.views',
+        //'app.states',
+        //'app.models',
         'ui.bootstrap',
         "ui.bootstrap.tpls",
         'ui.router'
@@ -55,4 +58,5 @@ define("app", [
 
         $state.go('home');
     });
+*/
 });

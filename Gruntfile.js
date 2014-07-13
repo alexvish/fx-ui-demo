@@ -31,7 +31,22 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('./package.json'),
         less: {
-            './src/css/app.css': ['./src/css/app.less']
+            files: {
+                cwd: './src/css',
+                src: '*.less',
+                dest: 'src/css',
+                expand: true,
+                ext: '.css'
+            }
+        },
+        jade:{
+            files: {
+                cwd: './src/pages',
+                expand: true,
+                src:['**/*.jade'],
+                dest: './src/pages',
+                ext: '.html'
+            }
         },
         nodewebkit: {
             options: {
@@ -75,14 +90,15 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-jade');
     grunt.loadNpmTasks('grunt-node-webkit-builder');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-shell');
 
-    grunt.registerTask('default', ['less', 'shell:run']);
+    grunt.registerTask('default', ['less','jade', 'shell:run']);
     grunt.registerTask('run', ['default']);
     grunt.registerTask('install', ['shell:install', 'nodewebkit']);
-    grunt.registerTask('build', ['less', 'nodewebkit']);
+    grunt.registerTask('build', ['less','jade','nodewebkit']);
 
 
 };

@@ -5,8 +5,7 @@
  * which avails each controller of, for example, the `config` constants object.
  **/
 define([
-    './app',
-    './signup',
-    './home',
-    './file'
+    './start-menu',
+    './fx-trader',
+    './blotter'
 ], function () {});

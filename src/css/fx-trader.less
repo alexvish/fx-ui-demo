@@ -1,0 +1,186 @@
+@import 'bootstrap/bootstrap';
+
+@trader-width:350px;
+@trader-height:180px;
+
+@trader-head-height:30px;
+@trader-tail-height: 30px;
+@trader-head-title-width: 70px;
+@trader-head-title-height: 22px;
+@trader-tail-title-width: 150px;
+@trader-tail-title-height: 22px;
+
+@tsidepanel-margin: 10px;
+@tsidepanel-padding: 10px;
+@tsidepanel-width: (@trader-width - 4*@tsidepanel-margin)/2;
+@tsidepanel-border: 5px;
+@tsidepanel-height: @trader-height - 2*@tsidepanel-margin - @trader-head-height - @trader-tail-height;
+
+@price-margin: 1px;
+@price-width: (@tsidepanel-width - 6*@price-margin - 2*@tsidepanel-padding - 2*@tsidepanel-border)/3;
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+.tradepanel{
+    width: @trader-width;
+    height: @trader-height;
+    background: #7B7;
+    position:relative;
+}
+
+.tradepanelhead{
+    height: @trader-head-height;
+    color:white;
+    background: #070;
+    position: relative;
+    -webkit-app-region: drag;
+}
+
+.tradepanelheadtitle{
+    width: @trader-head-title-width;
+    height: @trader-head-title-height;
+    margin-top: -@trader-head-title-height/2;
+    margin-left: -@trader-head-title-width/2;
+    left: 50%;
+    top:50%;
+    font-weight: bold;
+    text-align: center;
+    position:absolute;
+}
+
+
+.closebutton{
+    position: absolute;
+    height: @trader-head-title-height;
+    width: @trader-head-title-height;
+    margin-top: -@trader-head-title-height/2;
+    right: 5px;
+    top: 50%;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #070;
+    -webkit-app-region: no-drag;
+}
+
+.closebutton:before{
+    content:'\00d7';
+}
+
+
+.closebutton:hover {
+    border-style: outset;
+}
+
+.closebutton:active {
+    border-style: inset;
+}
+
+.tpaneltail{
+    height:@trader-tail-height;
+    position:relative;
+    bottom:0;
+}
+
+.tpaneltailtitle{
+    width: @trader-tail-title-width;
+    height: @trader-tail-title-height;
+    margin-top: -@trader-tail-title-height/2;
+    margin-left: -@trader-tail-title-width/2;
+    left: 50%;
+    top:50%;
+    font-weight: bold;
+    text-align: center;
+    position:absolute;
+}
+
+.tsides{}
+
+.tsidepanel{
+    width: @tsidepanel-width;
+    height: @tsidepanel-height;
+    background: green;
+    color:white;
+    float: left;
+    border-radius: 10px;
+    padding: @tsidepanel-padding;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    backgroud-color: #040;
+    border-style: solid;
+    border-color: #070;
+    border-width:@tsidepanel-border;
+    margin: @tsidepanel-margin;
+    box-shadow: 2px 2px 3px #000;
+}
+
+.tsidepanel:hover{
+    border-color:#3A3;
+    background-image: linear-gradient(to bottom,#070,#040 40%, #040 60%,#070);
+}
+
+.tsidepanel:active{
+    background: white;
+    border-color: white;
+    color:black;
+}
+
+
+.tsidetop {
+}
+
+.tsidetopop{
+    float:left;
+    margin-right: 5px;
+}
+
+.tsidetopcurr{
+    float:left;
+}
+
+.tsidepricebuy{
+    float:right;
+}
+
+.tsidepricesell{
+    float:left;
+}
+
+.price{
+    float: left;
+    margin: @price-margin;
+    font-weight: bold;
+    width: @price-width;
+}
+
+
+.price1 {
+    font-size: 24px;
+    margin-top: @price-margin + 14px;
+}
+
+.tsidepricebuy .price1{
+    text-align: left;
+}
+.tsidepricebuy .price1{
+    text-align: right;
+}
+
+.price2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.price3 {
+    font-size: 18px;
+    text-align: left;
+    margin-top: @price-margin + 6px;
+    width: auto;
+}
+
+

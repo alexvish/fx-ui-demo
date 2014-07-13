@@ -1,0 +1,45 @@
+@import 'bootstrap/bootstrap';
+@import (less) '../lib/ng-grid/ng-grid.css';
+
+
+.blotterGrid{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+
+@rejected_bg: #F77;
+@new_bg: #777;
+
+.rejectedorder{
+    text-decoration: line-through;
+    background: @rejected_bg;
+}
+.selected .rejectedorder{
+    background: lighten(@rejected_bg, 10%);
+}
+.neworder{
+    background: @new_bg;
+}
+.selected .neworder{
+    background: lighten(@new_bg, 30%);;
+}
+
+.sell {
+    color: red;
+}
+
+.buy {
+    color: green;
+}
+
+.redQty {
+    color:red;
+}
+
+blackQty {
+    color:black;
+}

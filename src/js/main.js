@@ -14,7 +14,9 @@ requirejs.config({
         '_': '../lib/lodash/dist/lodash',
         '$': '../lib/jquery/jquery',
         'angular-bootstrap':'../lib/angular-bootstrap/ui-bootstrap',
-        'angular-bootstrap-tmpls': '../lib/angular-bootstrap/ui-bootstrap-tpls'
+        'angular-bootstrap-tmpls': '../lib/angular-bootstrap/ui-bootstrap-tpls',
+        'nanoscroller':'../lib/nanoscroller/bin/javascripts/jquery.nanoscroller',
+        'ng-grid':'../lib/ng-grid/build/ng-grid'
     },
 
     /**
@@ -39,6 +41,12 @@ requirejs.config({
         },
         'angular-bootstrap':{
             deps:['angular', '$', 'angular-bootstrap-tmpls']
+        },
+        'nanoscroller': {
+            deps:['$']
+        },
+        'ng-grid':{
+            deps:['angular']
         }
     },
 

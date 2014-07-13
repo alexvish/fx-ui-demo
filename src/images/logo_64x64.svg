@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64px"
+   height="64px"
+   id="svg3039"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="sb_logo_64x64.svg">
+  <defs
+     id="defs3041">
+    <radialGradient
+       gradientTransform="matrix(1.5309537,0,0,1.6408753,-2.8914536,-2.4004496)"
+       id="SVGID_2_"
+       cx="23.700199"
+       cy="20.700199"
+       r="23.4128"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         style="stop-color:#52A347"
+         id="stop20" />
+      <stop
+         offset="0.502"
+         style="stop-color:#83B03E"
+         id="stop22" />
+      <stop
+         offset="0.7059"
+         style="stop-color:#2B9940"
+         id="stop24" />
+      <stop
+         offset="0.9294"
+         style="stop-color:#264122"
+         id="stop26" />
+      <stop
+         offset="0.9333"
+         style="stop-color:#264122"
+         id="stop28" />
+    </radialGradient>
+    <radialGradient
+       id="SVGID_1_"
+       cx="23.700199"
+       cy="20.700701"
+       r="23.412399"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         style="stop-color:#52A347"
+         id="stop7" />
+      <stop
+         offset="0.502"
+         style="stop-color:#83B03E"
+         id="stop9" />
+      <stop
+         offset="0.7059"
+         style="stop-color:#2EA64C"
+         id="stop11" />
+      <stop
+         offset="0.9294"
+         style="stop-color:#264122"
+         id="stop13" />
+      <stop
+         offset="0.9333"
+         style="stop-color:#264122"
+         id="stop15" />
+    </radialGradient>
+    <radialGradient
+       gradientTransform="matrix(1.5309537,0,0,1.6408753,-2.8914536,-2.4004496)"
+       r="23.412399"
+       cy="20.700701"
+       cx="23.700199"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient3037"
+       xlink:href="#SVGID_1_"
+       inkscape:collect="always" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#SVGID_1_"
+       id="radialGradient3086"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5309537,0,0,1.6408753,-2.8914536,-2.4004496)"
+       cx="23.700199"
+       cy="20.700701"
+       r="23.412399" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#SVGID_2_"
+       id="radialGradient3088"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5309537,0,0,1.6408753,-2.8914536,-2.4004496)"
+       cx="23.700199"
+       cy="20.700199"
+       r="23.4128" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.5"
+     inkscape:cx="32"
+     inkscape:cy="32"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="1600"
+     inkscape:window-height="838"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3044">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <g
+       id="g3082"
+       transform="matrix(1.0233151,0,0,0.99433958,-0.00397417,3.4451597e-4)"
+       inkscape:export-filename="D:\Development\risk\pricing-ui\images\sb_logo_64x64.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         id="path17"
+         d="M 50.309189,4.245096 52.988358,6.8704965 19.154281,27.709613 2.7730753,17.536186 4.3040293,14.254436 19.154281,23.361294 50.309189,4.245096 z M 43.496445,0.060864 47.094185,2.0299143 19.154281,19.259106 6.1411739,11.30086 8.3610573,8.429328 19.154281,15.074873 43.496445,0.060864 z m 11.86489,9.5170765 1.99024,2.8715325 L 19.154281,35.996033 0.70628859,24.673994 1.5483132,21.064068 19.154281,31.893845 55.361335,9.5779405 z"
+         clip-rule="evenodd"
+         inkscape:connector-curvature="0"
+         style="fill:url(#radialGradient3086);fill-rule:evenodd" />
+      <path
+         id="path30"
+         d="m 60.872769,20.161586 c 1.122189,3.39169 1.684049,6.945826 1.684049,10.66569 0,3.719864 -0.56186,7.329789 -1.684049,10.829777 l -0.765477,2.216823 c -1.581474,3.992248 -3.801358,7.548025 -6.659648,10.665689 -2.908812,3.061873 -6.224858,5.414888 -9.951199,7.055764 -3.928428,1.804962 -7.985454,2.707444 -12.171083,2.707444 -4.236148,0 -8.293176,-0.904123 -12.171081,-2.707444 C 15.530513,59.954453 12.238963,57.601438 9.2796289,54.539565 6.3708175,51.421901 4.1509341,47.866124 2.61998,43.873876 0.98645305,39.660108 0.17045445,35.311788 0.17045445,30.827276 v -2.215183 l 18.98382655,11.568173 40.034438,-24.61313 1.68405,4.59445 z"
+         clip-rule="evenodd"
+         inkscape:connector-curvature="0"
+         style="fill:url(#radialGradient3088);fill-rule:evenodd" />
+    </g>
+  </g>
+</svg>

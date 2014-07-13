@@ -1,0 +1,8 @@
+doctype html
+
+html
+    head
+        link(rel="stylesheet",type="text/css",href="../css/blotter.css")
+    body(ng-controller="BlotterCtl")
+        .blotterGrid(ng-grid="gridOptions")
+        script(src="../lib/requirejs/require.js",data-main="../js/main.js")

@@ -13,3 +13,5 @@ nbproject
 lib/
 
 *.sublime-*
+/src/css/*.css
+/src/pages/*.html

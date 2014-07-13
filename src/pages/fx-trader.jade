@@ -1,0 +1,30 @@
+doctype html
+
+html
+    head
+        link(rel="stylesheet",type="text/css",href="../css/fx-trader.css")
+    body
+        .tradepanel(ng-controller="FXTraderCtl")
+            .tradepanelhead
+                span.tradepanelheadtitle {{ccPair.label}}
+                span.closebutton(ng-click="windowClose()")
+            .tsides.clearfix
+                .tsidepanel(ng-click="buy()")
+                    .tsidetop.clearfix
+                        .tsidetopop Buy
+                        .tsidetopcurr {{ccPair.cc1}}
+                    .tsideprice.tsidepricebuy.clearFix
+                        .price.price1 {{bid| number: 4 | pricePart: 1}}
+                        .price.price2 {{bid| number: 4 | pricePart: 2}}
+                        .price.price3 {{bid| number: 4 | pricePart: 3}}
+                .tsidepanel(ng-click="sell()")
+                    .tsidetop.clearfix
+                        .tsidetopop Sell
+                        .tsidetopcurr {{ccPair.cc1}}
+                    .tsideprice.tsidepricesell.clearFix
+                        .price.price2 {{offer| number: 4 | pricePart: 2}}
+                        .price.price3 {{offer| number: 4 | pricePart: 3}}
+                        .price.price1 {{offer| number: 4 | pricePart: 1}}
+            .tpaneltail
+                .tpaneltailtitle Amount: 100K {{ccPair.cc2}}
+        script(src="../lib/requirejs/require.js",data-main="../js/main.js")

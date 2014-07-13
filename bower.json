@@ -15,6 +15,8 @@
     "less": "~1.5.1",
     "jquery": "~2.0.3",
     "angular-bootstrap": "~0.10.0",
-    "angular-ui-router": "angular-ui-router#0.2.8-bowratic-tedium"
+    "angular-ui-router": "angular-ui-router#0.2.8-bowratic-tedium",
+    "nanoscroller": "~0.8.0",
+    "ng-grid": "~2.0.11"
   }
 }

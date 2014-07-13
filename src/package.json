@@ -1,21 +1,32 @@
 {
-  "name": "angular-desktop-app",
+  "name": "fx-ui-demo",
   "description": "Desktop application developed using AngularJS and web technologies. Powered by node-webkit",
   "version": "1.2.0",
-  "main": "index.html",
-  "author":{
+  "main": "pages/start-menu.html",
+  "author": {
+    "name": "Alexey Vishentsev",
+    "url": "https://github.com/alexvish"
+  },
+  "contributors": [
+    {
       "name": "Joel Grenon",
       "url": "https://github.com/jgrenon"
-  },
-  "contributors":[{
-        "name": "Tom Lawson",
-        "url" : "https://github.com/talss89"
-    }],
+    },
+    {
+      "name": "Tom Lawson",
+      "url": "https://github.com/talss89"
+    }
+  ],
   "window": {
-    "toolbar": true,
-    "width": 1200,
-    "height": 960,
-    "icon":"images/favicon.ico"
+    "show": false,
+    "toolbar": false,
+    "frame": false,
+    "position": "center",
+    "always-on-top": true,
+    "width": 600,
+    "height": 500,
+    "icon": "images/logo_64x64.png",
+    "show_in_taskbar": false
   },
   "dependencies": {
     "jade": "~0.35.0",
@@ -26,10 +37,11 @@
     "moment": "~2.4.0",
     "shortid": "~2.0.0",
     "tungus": "0.0.2",
-    "mongoose": "~3.8.7"
+    "mongoose": "~3.8.7",
+    "uuid": "^1.4.1",
+    "lodash": "^2.4.1"
   },
-  "scripts":{
-    "postinstall" : "node ../etc/scripts/postinstall.js"
+  "scripts": {
+    "postinstall": "node ../etc/scripts/postinstall.js"
   }
-
 }

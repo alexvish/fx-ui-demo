@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Fx App Main menu
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="../css/start-menu.css")
+  body
+    #start-menu.clearfix(ng-controller="StartMenuCtrl")
+      #start-menu-left-panel.list-group
+        a.list-group-item(href="#",ng-repeat="menu in mainMenu",ng-class="{active:isActive(menu)}", ng-mouseover="activateMenu(menu)",ng-click="mainItemClick(menu)") {{menu.label}}
+        #search-area(ng-class="{active:isSearchActive()}")
+          input(placeholder="Search",ng-model="searchText")
+      #start-menu-right-panel.nano
+        #start-menu-right-panel-content.nano-content
+          #start-menu-right-panel-container.list-group(nanoscroll)
+            a.list-group-item(ng-repeat="submenu in allSubItems() | filter:searchText",href="#",ng-click="submenuItemClick(submenu)") {{submenu.label}}
+    script(src="../lib/requirejs/require.js",data-main="../js/main.js")
